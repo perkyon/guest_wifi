@@ -1,0 +1,95 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This ensures that padding does not affect the total width or height of elements */
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('/Users/ilafomincev/Desktop/guest_wifi/images/IMG_4954 1.png'); /* Update the URL path relative to the CSS file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.content-container {
+    background-color: rgb(255, 255, 255); /* Белый цвет без прозрачности */
+    padding: 80px; /* Пространство вокруг содержимого */
+    border-radius: 40px; /* Округленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Небольшая тень для объемного эффекта */
+    width: 80%; /* или конкретная ширина, например 600px */
+    max-width: 500px; /* Максимальная ширина */
+    margin: 50px auto; /* Верхний и нижний внешние отступы для центрирования контейнера */
+    position: relative; /* Чтобы контейнер был поверх фонового изображения */
+    z-index: 1; /* Выше, чем фоновое изображение */
+    top: 0px; /* Смещение контейнера вниз относительно его нормальной позиции */
+}
+
+.logo-wifi-palm {
+    display: flex;
+    flex-direction: row; /* Элементы в ряд */
+    align-items: center; /* Центрирование элементов по вертикали */
+    justify-content: center; /* Центрирование элементов по горизонтали */
+    gap: 10px; /* Расстояние между элементами */
+    width: auto; /* Автоматический расчет ширины */
+}
+
+.welcome-text {
+    font-size: 0.5rem; /* Размер шрифта для приветствия */
+    width: 100px; /* Автоматический расчет ширины */
+    margin-right: 10px; /* Добавьте отступ справа от текста */
+    transform: translateY(-10px); /* Поднимает иконку */
+}
+
+.logo {
+    height: 100px; /* Высота логотипа */
+    width: 1000px; /* Ширина будет рассчитана автоматически для сохранения пропорций */
+    transform: translateY(-10px); /* Поднимает иконку Wi-Fi вверх на 5px */
+}
+
+.wifi-icon, .palm-icon {
+    height: 30px; /* Высота иконок */
+    width: 1000px; /* Автоматический расчет ширины */
+    transform: translateY(-10px); /* Поднимает иконку */
+}
+
+/* Если вы хотите, чтобы иконки были меньше логотипа, вы можете установить им меньший размер */
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-box, .telegram-channel {
+    margin: 20px;
+    padding: 10px;
+    width: 80%; /* Adjust width as needed */
+    max-width: 500px; /* Adjust max width as needed */
+}
+
+.cat-img {
+    width: 100%; /* Adjust as needed */
+    max-width: 200px; /* Adjust as needed */
+    height: auto; /* Keep aspect ratio of the image */
+}
+
+.social-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    margin-top: 20px;
+    color: #000;
+}
