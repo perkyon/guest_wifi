@@ -5,10 +5,26 @@
     box-sizing: border-box; /* This ensures that padding does not affect the total width or height of elements */
 }
 
+@font-face {
+    font-family: 'Advent Pro';
+    src: url('/Users/Sophia/Desktop/Файфай/font/adventPro/AdventPro-VariableFont_wdth,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Users/Sophia/Desktop/Файфай/font/inter/Inter-VariableFont_slnt,wght.ttf');
+}
+
 /* Basic styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('/Users/ilafomincev/Desktop/guest_wifi/images/IMG_4954 1.png'); /* Update the URL path relative to the CSS file */
+    color: #2D2D2D;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-image: url('/Users/Sophia/Desktop/Файфай/images/IMG_4954 1.png'); /* Update the URL path relative to the CSS file */ 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +35,6 @@ body {
     background-color: rgb(255, 255, 255); /* Белый цвет без прозрачности */
     padding: 80px; /* Пространство вокруг содержимого */
     border-radius: 40px; /* Округленные углы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Небольшая тень для объемного эффекта */
     width: 80%; /* или конкретная ширина, например 600px */
     max-width: 500px; /* Максимальная ширина */
     margin: 50px auto; /* Верхний и нижний внешние отступы для центрирования контейнера */
@@ -34,29 +49,33 @@ body {
     align-items: center; /* Центрирование элементов по вертикали */
     justify-content: center; /* Центрирование элементов по горизонтали */
     gap: 10px; /* Расстояние между элементами */
-    width: auto; /* Автоматический расчет ширины */
 }
 
-.welcome-text {
-    font-size: 0.5rem; /* Размер шрифта для приветствия */
-    width: 100px; /* Автоматический расчет ширины */
+.header-text {
+    width: 93px;
+    height: 30px;
+    flex-shrink: 0;
     margin-right: 10px; /* Добавьте отступ справа от текста */
-    transform: translateY(-10px); /* Поднимает иконку */
+    color: #000;
+    text-align: center;
+    font-family: 'Advent Pro';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .logo {
-    height: 100px; /* Высота логотипа */
-    width: 1000px; /* Ширина будет рассчитана автоматически для сохранения пропорций */
-    transform: translateY(-10px); /* Поднимает иконку Wi-Fi вверх на 5px */
+    width: 136px;
+    height: 109px;
+    flex-shrink: 0;
 }
 
-.wifi-icon, .palm-icon {
-    height: 30px; /* Высота иконок */
-    width: 1000px; /* Автоматический расчет ширины */
-    transform: translateY(-10px); /* Поднимает иконку */
+.palm-icon {
+    width: 36px;
+    height: 38px;
+    flex-shrink: 0;
 }
-
-/* Если вы хотите, чтобы иконки были меньше логотипа, вы можете установить им меньший размер */
 
 
 .header {
@@ -64,6 +83,54 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    width: 310px;
+    height: 44px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.enteringAnumber {
+    width: 213px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 2px solid #4F4F4F;
+    background: rgba(0, 0, 0, 0.00);
+    margin-bottom: 40px;
+    padding: 5px;
+}
+
+.buttonAgree {
+    border: 0px;
+    width: 200px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FF8282;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
 }
 
 .review-box, .telegram-channel {
